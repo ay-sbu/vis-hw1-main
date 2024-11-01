@@ -33,7 +33,6 @@ def star_finder():
     
     cv2.putText(img, f"count: {len(contours)}", (10, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
     
-    cv2.rectangle(img, (10, 10), (50, 50), (255, 0, 0), 1)
     rect_scale = (4, 4)
     for i in range(len(contours)):
         print('coordinate:', contours[i][0])
